@@ -1,4 +1,4 @@
-name: local-api
+name: @hozgur/local-api
 on:
   release:
     types: [created]
