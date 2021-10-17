@@ -1,6 +1,6 @@
 {
   "name": "@hozgur/local-api",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Get Local IPV4 of Computer.",
   "main": "localapi.js",
   "scripts": {
@@ -10,11 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/hozgur/local-api.git"
   },
-  "publishConfig": {
-    "registry":"https://npm.pkg.github.com/hozgur"
-  },
   "keywords": [],
-  "author": "hakan-ozgur",
+  "author": "hozgur",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/hozgur/local-api/issues"
