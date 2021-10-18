@@ -2,8 +2,8 @@ const { networkInterfaces } = require('os');
 const fs = require('fs');
 const path = require('path');
 
-let netmask = '255,255,255,0';
-let gateway = '192,168,2,1';
+let netmask = '255.255.255.0';
+let gateway = '192.168.2.1';
 
 const configfilename = 'app-config.json';
 const configpath = path.join(__dirname, configfilename);
@@ -13,8 +13,8 @@ function getLocalIPV4() {
     try {
         const config = JSON.parse(fs.readFileSync(configpath));
         if(config) {
-            netmask = config.netmask || '255,255,255,0';
-            gateway = config.gateway || '192,168,2,1';
+            netmask = config.netmask || netmask;
+            gateway = config.gateway || gateway;
         }
         else {
             console.log('!app-config.json file not found. Using default values.');
